@@ -7,11 +7,17 @@
 
 import SwiftUI
 
-@main
-struct SpeedrunApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct RootView: View {
+
+    var body: some View {
+        VStack(alignment: .center, spacing: 8) {
+            Text("Lorem")
+            Text("Ipsum")
         }
     }
+}
+
+struct ExampleApp: App {
+
+    var body: some Scene { WindowGroup { RootView() } }
 }

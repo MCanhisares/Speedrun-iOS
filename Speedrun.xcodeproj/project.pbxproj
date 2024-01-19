@@ -14,6 +14,9 @@
 		E8503FB72B5A29EA005B3538 /* SpeedrunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8503FB62B5A29EA005B3538 /* SpeedrunTests.swift */; };
 		E8503FC12B5A29EA005B3538 /* SpeedrunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8503FC02B5A29EA005B3538 /* SpeedrunUITests.swift */; };
 		E8503FC32B5A29EA005B3538 /* SpeedrunUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8503FC22B5A29EA005B3538 /* SpeedrunUITestsLaunchTests.swift */; };
+		E8503FD02B5A2A97005B3538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8503FCF2B5A2A97005B3538 /* AppDelegate.swift */; };
+		E8503FD22B5A2E75005B3538 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8503FD12B5A2E75005B3538 /* SceneDelegate.swift */; };
+		E8503FD42B5A2F1E005B3538 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8503FD32B5A2F1E005B3538 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		E8503FBC2B5A29EA005B3538 /* SpeedrunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedrunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8503FC02B5A29EA005B3538 /* SpeedrunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedrunUITests.swift; sourceTree = "<group>"; };
 		E8503FC22B5A29EA005B3538 /* SpeedrunUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedrunUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8503FCF2B5A2A97005B3538 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8503FD12B5A2E75005B3538 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8503FD32B5A2F1E005B3538 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E8503FD52B5A2FCD005B3538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +101,14 @@
 		E8503FA42B5A29E8005B3538 /* Speedrun */ = {
 			isa = PBXGroup;
 			children = (
+				E8503FD52B5A2FCD005B3538 /* Info.plist */,
 				E8503FA52B5A29E8005B3538 /* SpeedrunApp.swift */,
 				E8503FA72B5A29E8005B3538 /* ContentView.swift */,
 				E8503FA92B5A29EA005B3538 /* Assets.xcassets */,
 				E8503FAB2B5A29EA005B3538 /* Preview Content */,
+				E8503FCF2B5A2A97005B3538 /* AppDelegate.swift */,
+				E8503FD12B5A2E75005B3538 /* SceneDelegate.swift */,
+				E8503FD32B5A2F1E005B3538 /* HomeViewController.swift */,
 			);
 			path = Speedrun;
 			sourceTree = "<group>";
@@ -257,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8503FD42B5A2F1E005B3538 /* HomeViewController.swift in Sources */,
+				E8503FD02B5A2A97005B3538 /* AppDelegate.swift in Sources */,
 				E8503FA82B5A29E8005B3538 /* ContentView.swift in Sources */,
 				E8503FA62B5A29E8005B3538 /* SpeedrunApp.swift in Sources */,
+				E8503FD22B5A2E75005B3538 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +439,7 @@
 				DEVELOPMENT_TEAM = 4U5F9FC7BM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Speedrun/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -454,7 +468,7 @@
 				DEVELOPMENT_TEAM = 4U5F9FC7BM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Speedrun/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
