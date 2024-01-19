@@ -6,13 +6,18 @@
 //
 
 import SwiftUI
+import Inject //1
 
 struct RootView: View {
 
+    @ObservedObject private var io = Inject.observer //2
+    
     var body: some View {
         VStack(alignment: .center, spacing: 8) {
             Text("Lorem")
-            Text("Ipsum")
+            Text("lorem")
+                .padding()
+                .enableInjection()
         }
     }
 }

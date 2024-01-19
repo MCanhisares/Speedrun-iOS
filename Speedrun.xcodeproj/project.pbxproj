@@ -17,6 +17,10 @@
 		E8503FD02B5A2A97005B3538 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8503FCF2B5A2A97005B3538 /* AppDelegate.swift */; };
 		E8503FD22B5A2E75005B3538 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8503FD12B5A2E75005B3538 /* SceneDelegate.swift */; };
 		E8503FD42B5A2F1E005B3538 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8503FD32B5A2F1E005B3538 /* HomeViewController.swift */; };
+		E8503FD82B5A3774005B3538 /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = E8503FD72B5A3774005B3538 /* Inject */; };
+		E8503FDA2B5A3CB3005B3538 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8503FD92B5A3CB3005B3538 /* Card.swift */; };
+		E8503FDC2B5A3EF3005B3538 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = E8503FDB2B5A3EF3005B3538 /* data.json */; };
+		E8503FDF2B5A41C4005B3538 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E8503FDE2B5A41C4005B3538 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,8 @@
 		E8503FD12B5A2E75005B3538 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E8503FD32B5A2F1E005B3538 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E8503FD52B5A2FCD005B3538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E8503FD92B5A3CB3005B3538 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E8503FDB2B5A3EF3005B3538 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8503FD82B5A3774005B3538 /* Inject in Frameworks */,
+				E8503FDF2B5A41C4005B3538 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +117,8 @@
 				E8503FCF2B5A2A97005B3538 /* AppDelegate.swift */,
 				E8503FD12B5A2E75005B3538 /* SceneDelegate.swift */,
 				E8503FD32B5A2F1E005B3538 /* HomeViewController.swift */,
+				E8503FD92B5A3CB3005B3538 /* Card.swift */,
+				E8503FDB2B5A3EF3005B3538 /* data.json */,
 			);
 			path = Speedrun;
 			sourceTree = "<group>";
@@ -154,6 +164,10 @@
 			dependencies = (
 			);
 			name = Speedrun;
+			packageProductDependencies = (
+				E8503FD72B5A3774005B3538 /* Inject */,
+				E8503FDE2B5A41C4005B3538 /* SnapKit */,
+			);
 			productName = Speedrun;
 			productReference = E8503FA22B5A29E8005B3538 /* Speedrun.app */;
 			productType = "com.apple.product-type.application";
@@ -226,6 +240,10 @@
 				Base,
 			);
 			mainGroup = E8503F992B5A29E8005B3538;
+			packageReferences = (
+				E8503FD62B5A3774005B3538 /* XCRemoteSwiftPackageReference "Inject" */,
+				E8503FDD2B5A41C4005B3538 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = E8503FA32B5A29E8005B3538 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8503FAD2B5A29EA005B3538 /* Preview Assets.xcassets in Resources */,
+				E8503FDC2B5A3EF3005B3538 /* data.json in Resources */,
 				E8503FAA2B5A29EA005B3538 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8503FD42B5A2F1E005B3538 /* HomeViewController.swift in Sources */,
+				E8503FDA2B5A3CB3005B3538 /* Card.swift in Sources */,
 				E8503FD02B5A2A97005B3538 /* AppDelegate.swift in Sources */,
 				E8503FA82B5A29E8005B3538 /* ContentView.swift in Sources */,
 				E8503FA62B5A29E8005B3538 /* SpeedrunApp.swift in Sources */,
@@ -449,6 +469,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chariscode.Speedrun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -602,6 +626,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E8503FD62B5A3774005B3538 /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.4;
+			};
+		};
+		E8503FDD2B5A41C4005B3538 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E8503FD72B5A3774005B3538 /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8503FD62B5A3774005B3538 /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+		E8503FDE2B5A41C4005B3538 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8503FDD2B5A41C4005B3538 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E8503F9A2B5A29E8005B3538 /* Project object */;
 }
